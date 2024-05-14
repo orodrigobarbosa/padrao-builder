@@ -3,15 +3,16 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-//PRODUCT
+//************PRODUCT************
 
 public class ListaDeTarefas {
 
     //ATRIBUTO
+    // uma lista
     private List<String> tarefas;
 
 
-    //OPERACOES
+    //OPERACOES / CHAMAM OS MÉTODOS DA CLASSE ConstrutorSimplesListaDeTarefas
     public ListaDeTarefas() {
         this.tarefas = new ArrayList<>();
     }

@@ -3,14 +3,39 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-            org.example.ConstrutorListaDeTarefas construtor = new org.example.ConstrutorSimplesListaDeTarefas();
 
-            org.example.DiretorListaDeTarefas diretor = new org.example.DiretorListaDeTarefas(construtor);
+        //instanciando a interface com o objeto abaixo
+        ConstrutorListaDeTarefas construtor = new ConstrutorSimplesListaDeTarefas();
 
-            org.example.ListaDeTarefas listaDeTarefas = diretor.construirListaDeTarefas("Lavar a louça", "Limpar o quarto", "Fazer compras");
+        //instanciando a classe diretora
+        DiretorListaDeTarefas diretor = new DiretorListaDeTarefas(construtor);
 
-            System.out.println("Tarefas:");
 
-            listaDeTarefas.imprimirTarefas();
-        }
+        //instanciando a classe product passando valores
+        ListaDeTarefas listaDeTarefas = diretor.construirListaDeTarefas("Lavar a louça", "Limpar o quarto", "Fazer compras");
+
+        System.out.println("Tarefas: ");
+
+        //chama o método de imprimir as tarefas, da classe listaDeTarefas
+        listaDeTarefas.imprimirTarefas();
+
+/*
+        System.out.println("---------- utilizando a classe diretora para acrescentar tarefas à lista de tarefas");
+        diretor.adicionarTarefas("lavar o carro, dar banho no cachorro");
+        listaDeTarefas.imprimirTarefas();
+
+ */
+
+
+        /*
+        System.out.println("-------------");
+        listaDeTarefas.limparTarefas();
+        listaDeTarefas.imprimirTarefas();
+        listaDeTarefas.adicionarTarefa("Estudar para prova");
+        listaDeTarefas.imprimirTarefas();
+        */
+
     }
+
+
+}

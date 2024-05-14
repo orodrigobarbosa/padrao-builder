@@ -1,17 +1,23 @@
 package org.example;
 
+
+//************ DIRECTOR************
+
+
+
 public class DiretorListaDeTarefas {
 
     //INSTANCIA A INTERFACE - QUE CONTÉM OS ATRIBUTOS
-    private org.example.ConstrutorListaDeTarefas construtor;
+    private ConstrutorListaDeTarefas construtor;
 
 
-    //OPERATIONS - CONSTRUCTOS
-    public DiretorListaDeTarefas(org.example.ConstrutorListaDeTarefas construtor) {
+    //OPERATIONS - CONSTRUCTOr
+    public DiretorListaDeTarefas(ConstrutorListaDeTarefas construtor) {
         this.construtor = construtor;
     }
 
-    public org.example.ListaDeTarefas construirListaDeTarefas(String... tarefas) {
+    //METHOD
+    public ListaDeTarefas construirListaDeTarefas(String... tarefas) {
         construtor.adicionarTarefas(tarefas);
         return construtor.construir();
     }

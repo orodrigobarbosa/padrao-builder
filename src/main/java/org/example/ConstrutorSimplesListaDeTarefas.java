@@ -1,14 +1,15 @@
 package org.example;
 
-//CONCRETE BUILDER
+//************CONCRETE BUILDER************ precisa implementar a interface abstrata Builder
 public class ConstrutorSimplesListaDeTarefas implements ConstrutorListaDeTarefas {
 
-    //INSTANCIA A CLASSE
-    private org.example.ListaDeTarefas listaDeTarefas;
+    //INSTANCIA A CLASSE (Product)
+    //ATRIBUTO
+    private ListaDeTarefas listaDeTarefas;
 
-    //OPERATIONS
+    //OPERATIONS / MÉTHODS
     public ConstrutorSimplesListaDeTarefas() {
-        this.listaDeTarefas = new org.example.ListaDeTarefas();
+        this.listaDeTarefas = new ListaDeTarefas();
     }
 
     @Override
@@ -16,7 +17,7 @@ public class ConstrutorSimplesListaDeTarefas implements ConstrutorListaDeTarefas
         listaDeTarefas.adicionarTarefa(tarefa);
     }
 
-    public void adicionarTarefas(String... tarefas) {
+    public void adicionarTarefas(String... tarefas) { // (...) varargs PERMITE PASSAR UM NÚMERO VARIÁVEL DE STRINGS PARA ESSE MÉTODO)
         for (String tarefa : tarefas) {
             listaDeTarefas.adicionarTarefa(tarefa);
         }
