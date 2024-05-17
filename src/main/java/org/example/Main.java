@@ -4,28 +4,28 @@ public class Main {
     public static void main(String[] args) {
 
 
-        //instanciando a interface com o objeto abaixo
+        // Instanciando o objeto ConstrutorSimplesListaDeTarefas que implementa a interface ConstrutorListaDeTarefas
         ConstrutorListaDeTarefas construtor = new ConstrutorSimplesListaDeTarefas();
 
-        //instanciando a classe diretora
+        // Instanciando a classe diretora passando o construtor
         DiretorListaDeTarefas diretor = new DiretorListaDeTarefas(construtor);
 
 
-        //instanciando a classe product passando valores
+        // Usando a classe diretora para construir o objeto ListaDeTarefas, passando valores
         ListaDeTarefas listaDeTarefas = diretor.construirListaDeTarefas("Lavar a louça", "Limpar o quarto", "Fazer compras");
 
         System.out.println("Tarefas: ");
 
-        //chama o método de imprimir as tarefas, da classe listaDeTarefas
+        // Chamando o método de imprimir as tarefas da classe ListaDeTarefas
         listaDeTarefas.imprimirTarefas();
 
 /*
-        System.out.println("---------- utilizando a classe diretora para acrescentar tarefas à lista de tarefas");
+        System.out.println("---Utilizando a classe diretora para acrescentar tarefas à lista de tarefas---");
         diretor.adicionarTarefas("lavar o carro, dar banho no cachorro");
         listaDeTarefas.imprimirTarefas();
 
- */
 
+/*
 
         /*
         System.out.println("-------------");
