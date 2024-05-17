@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.List;
+
 //************CONCRETE BUILDER************ precisa implementar a interface abstrata Builder
 public class ConstrutorSimplesListaDeTarefas implements ConstrutorListaDeTarefas {
 
@@ -7,7 +9,7 @@ public class ConstrutorSimplesListaDeTarefas implements ConstrutorListaDeTarefas
     //ATRIBUTO
     private ListaDeTarefas listaDeTarefas;
 
-    //OPERATIONS / MÉTHODS
+    //OPERATIONS / MÉTODO CONSTRUTOR
     public ConstrutorSimplesListaDeTarefas() {
         this.listaDeTarefas = new ListaDeTarefas();
     }
@@ -34,8 +36,9 @@ public class ConstrutorSimplesListaDeTarefas implements ConstrutorListaDeTarefas
     }
 
     @Override
-    public org.example.ListaDeTarefas construir() {
+    public ListaDeTarefas construir() {
         return listaDeTarefas;
     }
+
 
 }

@@ -12,7 +12,7 @@ aquelas etapas que são necessárias para a produção de uma configuração esp
 objeto
  */
 
-    //Attributes
+    //Métodos
     void adicionarTarefa(String tarefa);
 
     void adicionarTarefas(String... tarefas); //... significa que o método pode aceitar um número variável de tarefas
@@ -24,5 +24,7 @@ objeto
 
     //Operations (BuildPart)
     ListaDeTarefas construir();
+
+
 }
 

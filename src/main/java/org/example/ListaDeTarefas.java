@@ -29,6 +29,8 @@ public class ListaDeTarefas {
         tarefas.clear();
     }
 
+    //O PADRÃO PERMITE IMPRIMIR TODAS AS TAREFAS ARMAZENADAS NA LISTA "TAREFAS"
+
     public void imprimirTarefas() {
         for (String tarefa : tarefas) {
             System.out.println(tarefa);
