@@ -3,7 +3,11 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+/*
+Utiliza o Diretor para construir um objeto usando um Builder espefíco
 
+ Cria um ConstrutorSimplesListaDeTarefas, passa para o DiretorListaDeTarefas e, em seguida, constrói uma ListaDeTarefas usando o método construirListaDeTarefas do diretor.
+ */
         // Instanciando o objeto ConstrutorSimplesListaDeTarefas que implementa a interface ConstrutorListaDeTarefas
         ConstrutorListaDeTarefas construtor = new ConstrutorSimplesListaDeTarefas();
 
@@ -16,8 +20,10 @@ public class Main {
 
         System.out.println("Tarefas: ");
 
-        // Chamando o método de imprimir as tarefas da classe ListaDeTarefas
+        // Utilizando o objeto criado acima para chamar o método imprimir, criado na classe produto
         listaDeTarefas.imprimirTarefas();
+
+
 
 /*
         System.out.println("---Utilizando a classe diretora para acrescentar tarefas à lista de tarefas---");

@@ -1,7 +1,12 @@
 package org.example;
 
 
-//************ DIRECTOR************
+//************ DIRETOR************
+/*
+Constrói um objeto usando a interface Builder.
+É o diretor que controla o processo de construção usando a interface builder (ConstrutorListaDeTarefas)
+invocando os métodos em uma ordem específica.
+ */
 
 public class DiretorListaDeTarefas {
 
@@ -9,12 +14,12 @@ public class DiretorListaDeTarefas {
     private ConstrutorListaDeTarefas construtor;
 
 
-    //OPERATIONS - MÉTODO CONSTRUTOR
+    //OPERATIONS - MÉTODO CONSTRUTOR IMPLEMENTANDO A CLASSE DIRETOR
     public DiretorListaDeTarefas(ConstrutorListaDeTarefas construtor) {
         this.construtor = construtor;
     }
 
-    //METHOD
+    //MÉTODO INVOCANDO O PRODUTO
     public ListaDeTarefas construirListaDeTarefas(String... tarefas) {
         construtor.adicionarTarefas(tarefas);
         return construtor.construir();

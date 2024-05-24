@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //************PRODUCT************
+//representa o objeto complexo a ser construído (Uma Lista De Tarefas)
 
 public class ListaDeTarefas {
 
@@ -29,8 +30,7 @@ public class ListaDeTarefas {
         tarefas.clear();
     }
 
-    //O PADRÃO PERMITE IMPRIMIR TODAS AS TAREFAS ARMAZENADAS NA LISTA "TAREFAS"
-
+    //O PADRÃO PERMITE IMPRIMIR TODAS AS TAREFAS ARMAZENADAS NA LISTA "TAREFAS" com o método abaixo
     public void imprimirTarefas() {
         for (String tarefa : tarefas) {
             System.out.println(tarefa);

@@ -1,11 +1,13 @@
 package org.example;
 
-import java.util.List;
 
-//************CONCRETE BUILDER************ precisa implementar a interface abstrata Builder
+//************CONCRETE BUILDER************ CONSTRUTOR CONCRETO
+//Implementa a interface builder (ConstutorListaDeTarefas) para construir e montar aspartes do Produto
+//é aqui que toda a lógica para adicionar, remover, limpar tarefas e construir a lista é definida.
+
 public class ConstrutorSimplesListaDeTarefas implements ConstrutorListaDeTarefas {
 
-    //INSTANCIA A CLASSE (Product)
+    //INSTANCIA A CLASSE  LISTA DE TAREFAS(Product)
     //ATRIBUTO
     private ListaDeTarefas listaDeTarefas;
 
